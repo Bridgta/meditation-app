@@ -7,15 +7,17 @@
 }
 
 body {
-    background: lightblue url("./imgs/photo-1472099144211-ec702da4ac01.jpeg")
-        no-repeat center center/cover;
+    /* background: lightblue url("./imgs/photo-1472099144211-ec702da4ac01.jpeg")
+        no-repeat center center/cover; */
+    background-color: #bfe299;
+    background-image: linear-gradient(315deg, #bfe299 0%, #66b5f6 74%);
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: cornflowerblue;
+    color: #fff;
     margin: 0;
 }
 
@@ -31,7 +33,8 @@ body {
 }
 
 .circle {
-    background-color: #010f1c;
+    background-color: #bfe299;
+    background-image: linear-gradient(315deg, #bfe299 0%, #66b5f6 74%);
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -41,19 +44,18 @@ body {
 
 .gradient-circle {
     background: conic-gradient(
-        #55b7a4 0%,
-        #4ca493 40%,
+        #83beee 0%,
+        #228ee6 40%,
         #fff 40%,
         #fff 60%,
-        #336d62 60%,
-        #2a5b52 100%
+        #83beee 60%,
+        #228ee6 100%
     );
     height: 320px;
     width: 320px;
     z-index: -2;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
     left: -10px;
 }
 
@@ -82,5 +84,33 @@ body {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+.container.grow {
+    animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.container.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
