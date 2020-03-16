@@ -5,4 +5,4 @@
 
 ### Take a look
 
-<img src="https://imgur.com/egy2qUy"/>
+<img src="https://imgur.com/a/bknFz1C"/>
