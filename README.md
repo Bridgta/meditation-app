@@ -5,4 +5,4 @@
 
 ### Take a look
 
-[Relax](https://i.imgur.com/egy2qUy.png)
+<img src="https://imgur.com/egy2qUy"/>
